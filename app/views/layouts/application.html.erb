@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Motorshop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <script src="//www.google-analytics.com/analytics.js" async=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  
+  <!-- jQuery fallback !-->
+  <script>
+    if (typeof jQuery === 'undefined') {
+      document.write(unescape('%3Cscript%20src%3D%22%2Fassets%2Fjquery-3.0.0.min.js%22%3E%3C%2Fscript%3E'));
+    }
+  </script>
+</head>
+
+<body>
+
+<%= yield %>
+
+</body>
+</html>
