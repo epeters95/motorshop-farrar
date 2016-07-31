@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get '/servo', to: 'static_pages#servo', as: 'servo'
   get '/vfd', to: 'static_pages#vfd', as: 'vfd'
   get '/motors', to: 'static_pages#motors', as: 'motors'
-  
+  get '/download', to: 'static_pages#download', as: 'download'
 
 end

@@ -24,63 +24,76 @@
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="nav navbar-header">
       <a class="navbar-brand" href="<%= root_url %>">
-        <div class="logo">
+        <div class="logof">
           <%= image_tag("farrar-logo-sm.png") %>
         </div>
+        <div class="nav-slant">
+        </div>
       </a>
+      <!-- <ul class="navbar-left"> -->
+      <!-- </ul> -->
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+      <div class="nav-buffer"></div>
       <ul class="nav navbar-nav">
-        <li class="nav-slant">
-          <a>&nbsp;</a>
-        </li>
         <li class="dropdown head">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+          <a href="#" class="dropdown-toggle <%= action_active?("electro_mech", "vfd", "servo") %>" data-toggle="dropdown" role="button" aria-haspopup="true" >SERVICES</a>
           <ul class="dropdown-menu">
             <li><a href="<%= electro_mech_url %>">Electro/Mechanical Services</a></li>
             <li><a href="<%= vfd_url %>">Variable Frequency Drives</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Rewinding</a></li>
             <li><a href="<%= servo_url %>">Servo Motor Repairs</a></li>
           </ul>
         </li>
         <li class="dropdown head">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SALES</a>
+          <a href="#" class="dropdown-toggle <%= action_active?("motors") %>" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SALES</a>
           <ul class="dropdown-menu">
             <li><a href="<%= motors_url %>">Electric Motors</a></li>
-            <li><a href="<%= vfd_url %>">Variable Frequency Drives</a></li>
-            <li><a href="#">Pumps</a></li>
-            <li><a href="#">Generators</a></li>
-            <li><a href="#">Gearboxes</a></li>
+            <li><a href="<%= "#{vfd_url}#brands" %>">Variable Frequency Drives</a></li>
           </ul>
         </li>
-        <li class="head"><a href="<%= about_url %>">ABOUT US</a></li>
-        <li class="head"><a href="<%= contact_url %>">CONTACT</a></li>
+        <li class="head <%= action_active? "about" %>"><a href="<%= about_url %>">ABOUT US</a></li>
+        <li class="head <%= action_active? "contact" %>"><a href="<%= contact_url %>">CONTACT</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
+    <div class="nav navbar-right">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="linedivider"></div>
+<div class="clip-nav-wrapper visible-md-block visible-lg-block">
+  <div class="clip-nav-box">
+    <span class="call-now">24-hr Rush Service! Call <font style="font-size: 12pt;color: #f6cc7c;">866.708.1089</font></span>
+  </div>
+<div class="clip-nav-buffer"></div>
+  <div class="clip-nav">
+    <%= image_tag "clip-nav.png" %>
+  </div>
+</div>
+
+<div class="bg-wrapper">
+<div class="bg"></div>
+</div>
 
 <div class="container">
-<div class="row">
 
 <%= yield %>
 
-
 </div>
-</div>
-<br>
-<br>
 <div class="linedivider-2"></div>
 <div class="footer-wrapper">
 <div class="footer">
+  <div class="bg-wrapper">
+    <div class="bg"></div>
+    </div>
   <div class="container">
   <div class="row">
   <br>
@@ -99,7 +112,9 @@ We service the following Areas - New Hampshire, Massachusetts, Vermont, Maine, C
   <div class="footer-text">
 
   </div>
-  <%= image_tag("creditcardlogos.GIF") %>
+  <div class="credit-cards">
+    <%= image_tag("creditcardlogos.png") %>
+  </div>
 </div>
 </div>
 </div>

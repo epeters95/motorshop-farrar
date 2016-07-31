@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
 #gem 'sqlite3'
 # Use Postgres
-
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -55,3 +55,6 @@ group :production do
   gem 'newrelic_rpm'
   gem 'rails_12factor'
 end
+
+# windows fix (temporary)
+# gem 'tzinfo-data'

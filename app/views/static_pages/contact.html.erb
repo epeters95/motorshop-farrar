@@ -1,3 +1,111 @@
-<h1>Contact Us</h1>
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-10 center-white">
 
-Coming Soon
+		<div class="banner">
+		</div>
+		<div class="clip">
+	    	<%= image_tag("clip.png") %>
+		</div>
+		<div class="banner-h1">
+	    	<h1>&nbsp;&nbsp;&nbsp;Contact Us</h1>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<div class="contact-us-left">
+			<p>24-Hour Service
+			</p>
+
+			<p><b>Farrar Inc.</b></p>
+			<p>15 Avon St.</p>
+			<p>Keene, NH 03431-3596</p>
+			<br/>
+
+			<p>Telephone: 603-352-4316</p>
+			<p>Toll Free: 866-708-1089</p>
+			<p>Fax: 603-357-9476</p>
+			<br/>
+			<br/>
+
+			<br/>
+			<br/>
+		</div>
+		<div class="contact-us-right">
+			General Questions
+			<br/>
+			<h3>info@fafarrar.com</h3>
+			<br/>
+			VFD Engineering
+			<br/>
+			<h3>engineering@fafarrar.com</h3>
+			<br/>
+			Inside Sales
+			<br/>
+			<h3>sales@fafarrar.com</h3>
+			<br/>
+			Marketing
+			<br/>
+			<h3>marketing@fafarrar.com</h3>
+
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-10 directions-wrapper">
+		<div class="banner directions-banner dark-blue-grad">
+		  </div>
+		  <div class="banner-h1">
+		    <h1 id="brands">&nbsp;&nbsp;&nbsp;Directions</h1>
+		  </div>
+		  <br/>
+		  <br/>
+		<div class="map" style="margin:0px;padding:0px;overflow:hidden">
+			<iframe style="overflow:hidden;height:600px;width:100%" height="600" width="100%"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/embed/v1/place?key=<%= Rails.application.secrets.google_maps_key %>&q=Frederick+A+Farrar+Inc" allowfullscreen>
+			</iframe>
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<br/>
+<div class="row">
+
+	<div class="col-md-1"></div>
+	<div class="col-md-10 center-white line-cards-wrapper-bg">
+		<div class="sliver"></div>
+	<div class="line-cards-wrapper">
+		<br/><h3>Line Cards</h3>
+		<div class="line-cards">
+			<br/>
+
+		 	<%= link_to "Electro Mechanical Services", "/assets/pdfs/ems.pdf" %>
+		 	<br/>
+			<%= link_to "Turn-key Retrofits", "/assets/pdfs/tkr.pdf" %>
+			<br/>
+			<%= link_to "Energy Efficient Motors", "/assets/pdfs/eem.pdf" %>
+			<br/>
+			<%= link_to "Servo Motor Repair", "/assets/pdfs/smr.pdf" %>
+			<br/>
+			<%= link_to "Motor/Pump Repair", "/assets/pdfs/mpr.pdf" %>
+			<br/>
+			<%= link_to "Flygt Pumps Service Center", "/assets/pdfs/fpsc.pdf" %>
+			<br/>
+			<%= link_to "Field Services", "/assets/pdfs/fs.pdf" %>
+			<br/>
+			<%= link_to "VFD Brands Available", "/assets/pdfs/vba.pdf" %>
+
+			<br/>
+			<br/>
+			<br/>
+		</div>
+	</div>
+	</div>
+	<div class="col-md-1"></div>
+
+</div>
