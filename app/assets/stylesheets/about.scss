@@ -10,3 +10,28 @@ img.about-img {
   color: rgb(52, 87, 135);
   font-size: 14pt;
 }
+
+.certifications {
+  width: 100%;
+  /*background-color: rgba(52, 87, 135, 0.5);*/
+  .certifications-wrapper {
+  	width: 90%;
+  	position: relative;
+	/*margin: auto;*/
+	img {
+		width: 158px;
+		margin: 15px;
+	}
+	img.easa {
+		width: 134px;
+		padding: 12px;
+	}
+	img.first {
+		margin-left: 0px;
+	}
+	img.last {
+		margin-right: 0px;
+	}
+  }
+  position: relative;
+}
