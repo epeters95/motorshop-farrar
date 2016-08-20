@@ -45,7 +45,6 @@
           <a href="#" class="dropdown-toggle <%= action_active?("electro_mech", "vfd", "servo") %>" data-toggle="dropdown" role="button" aria-haspopup="true" >SERVICES</a>
           <ul class="dropdown-menu">
             <li><a href="<%= electro_mech_url %>">Electro/Mechanical Services</a></li>
-            <li><a href="<%= vfd_url %>">Variable Frequency Drives</a></li>
             <li><a href="<%= servo_url %>">Servo Motor Repairs</a></li>
           </ul>
         </li>
@@ -53,7 +52,7 @@
           <a href="#" class="dropdown-toggle <%= action_active?("motors") %>" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SALES</a>
           <ul class="dropdown-menu">
             <li><a href="<%= motors_url %>">Electric Motors</a></li>
-            <li><a href="<%= "#{vfd_url}#brands" %>">Variable Frequency Drives</a></li>
+            <li><a href="<%= vfd_url %>">Variable Frequency Drives</a></li>
           </ul>
         </li>
         <li class="head <%= action_active? "about" %>"><a href="<%= about_url %>">ABOUT US</a></li>
@@ -106,7 +105,7 @@
     © 2016 Farrar Inc., Electric Motor Repair & Rewinding
     </p>
     <p>
-Electro/Mechanical Services Rewinding Pumps Gearboxes Generators Servo Motor Repairs Variable Frequency Drives
+Electro/Mechanical Services <span class="diamond">&#9670;</span> Rewinding <span class="diamond">&#9670;</span> Pumps <span class="diamond">&#9670;</span> Gearboxes <span class="diamond">&#9670;</span> Generators <span class="diamond">&#9670;</span> Servo Motor Repairs <span class="diamond">&#9670;</span> Variable Frequency Drives
 </p>
 We service the following Areas - New Hampshire, Massachusetts, Vermont, Maine, Connecticut, New York
   </p>

@@ -18,37 +18,25 @@
 			<p>24-Hour Service
 			</p>
 
-			<p><b>Farrar Inc.</b></p>
-			<p>15 Avon St.</p>
-			<p>Keene, NH 03431-3596</p>
+			<p><b>Farrar Inc.</b>
+			<br/>15 Avon St.
+			<br/>Keene, NH 03431-3596</p>
 			<br/>
-
-			<p>Telephone: 603-352-4316</p>
-			<p>Toll Free: 866-708-1089</p>
-			<p>Fax: 603-357-9476</p>
-			<br/>
-			<br/>
-
+			<div class="contact-us-email">
+				For general questions, email:
+				<br/>
+				<h3>info@fafarrar.com</h3>
+			</div>
 			<br/>
 			<br/>
 		</div>
 		<div class="contact-us-right">
-			General Questions
-			<br/>
-			<h3>info@fafarrar.com</h3>
-			<br/>
-			VFD Engineering
-			<br/>
-			<h3>engineering@fafarrar.com</h3>
-			<br/>
-			Inside Sales
-			<br/>
-			<h3>sales@fafarrar.com</h3>
-			<br/>
-			Marketing
-			<br/>
-			<h3>marketing@fafarrar.com</h3>
-
+			<p>Telephone: 603-352-4316</p>
+			<p>Toll Free: 866-708-1089</p>
+			<p>Fax: 603-357-9476</p>
+		</div>
+		<div class="contact-image">
+			<%= image_tag("FIELD SERVICE1.jpg") %>
 		</div>
 	</div>
 	<div class="col-md-1"></div>
@@ -82,23 +70,33 @@
 	<div class="line-cards-wrapper">
 		<br/><h3>Line Cards</h3>
 		<div class="line-cards">
+		<script language="javascript" type="text/javascript">
+            function printImage(urlstr) {
+                var win = window.open(urlstr, "_blank");
+				win.onload = function() { win.print(); }
+            }
+       </script>
 			<br/>
-
-		 	<%= link_to "Electro Mechanical Services", "/assets/pdfs/ems.pdf" %>
+		 	<%= link_to "Electro Mechanical Services", "/assets/pdfs/linecard-ems.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-ems.jpg')">PRINT</a>
 		 	<br/>
-			<%= link_to "Turn-key Retrofits", "/assets/pdfs/tkr.pdf" %>
+			<%= link_to "Energy Efficient Motors", "/assets/pdfs/linecard-eem.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-eem.jpg')">PRINT</a>
 			<br/>
-			<%= link_to "Energy Efficient Motors", "/assets/pdfs/eem.pdf" %>
+			<%= link_to "Servo Motor Repair", "/assets/pdfs/linecard-smr.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-smr.jpg')">PRINT</a>
 			<br/>
-			<%= link_to "Servo Motor Repair", "/assets/pdfs/smr.pdf" %>
+			<%= link_to "Motor/Pump Repair", "/assets/pdfs/linecard-mpr.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-mpr.jpg')">PRINT</a>
 			<br/>
-			<%= link_to "Motor/Pump Repair", "/assets/pdfs/mpr.pdf" %>
+			<%= link_to "Pump Services", "/assets/pdfs/linecard-ps.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-ps.jpg')">PRINT</a>
 			<br/>
-			<%= link_to "Flygt Pumps Service Center", "/assets/pdfs/fpsc.pdf" %>
+			<%= link_to "Field Services", "/assets/pdfs/linecard-fs.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-fs.jpg')">PRINT</a>
 			<br/>
-			<%= link_to "Field Services", "/assets/pdfs/fs.pdf" %>
-			<br/>
-			<%= link_to "VFD Brands Available", "/assets/pdfs/vba.pdf" %>
+			<%= link_to "VFD Brands Available", "/assets/pdfs/linecard-vfd.jpg" %>
+			<a href="#" class= "print" onclick="printImage('/assets/pdfs/linecard-vfd.jpg')">PRINT</a>
 
 			<br/>
 			<br/>

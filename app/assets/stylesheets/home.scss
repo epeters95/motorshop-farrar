@@ -57,3 +57,43 @@ div.center-white.home {
   max-width: 950px;
   margin-left: 25px;
 }
+
+.home-item.servicec {
+  position: relative;
+  width: 27%;
+  float:left;
+}
+.home-item.salesc {
+  margin-left: 20px;
+  width: 27%;
+  float: left;
+}
+.home-item.im {
+  img {
+    width: 350px;
+    float: right;
+  }
+  overflow: hidden;
+}
+
+.easa-wrapper {
+  img { 
+    float: right;
+    margin-right: 50px;
+    margin-left: 20px;
+    min-width: 270px;
+  }
+  ul {
+    font-size: 13pt;
+  }
+}
+
+.col-md-10.center-white.line-cards-wrapper-bg.home {
+  margin-left: 25px;
+  height: 261px;
+  /*overflow: hidden;*/
+  .line-cards-wrapper.home {
+    /*overflow:hidden;*/
+    height: 261px !important;
+  }
+}
