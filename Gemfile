@@ -4,9 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
-gem 'sqlite3'
-# Use Postgres
-# gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -42,6 +39,7 @@ gem 'meta-tags'
 gem 'sitemap', '~> 0.3.3'
 
 group :development, :test do
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -53,12 +51,12 @@ group :development, :test do
 
   gem "binding_of_caller"
   gem "better_errors"
+  # windows fix
+  gem 'tzinfo-data'
 end
 
 group :production do
+  gem 'pg'
   gem 'newrelic_rpm'
   gem 'rails_12factor'
 end
-
-# windows fix
-gem 'tzinfo-data'
