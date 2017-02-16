@@ -11,6 +11,15 @@ img.about-img {
   font-size: 14pt;
 }
 
+div.yrs80 {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	img {
+		width: 370px;
+	}
+	margin-bottom: -80px;
+}
 .certifications {
   width: 100%;
   /*background-color: rgba(52, 87, 135, 0.5);*/
@@ -18,20 +27,21 @@ img.about-img {
   	width: 90%;
   	position: relative;
 	/*margin: auto;*/
-	img {
-		width: 158px;
-		margin: 15px;
-	}
-	img.easa {
-		width: 134px;
-		padding: 12px;
-	}
-	img.first {
-		margin-left: 0px;
-	}
-	img.last {
-		margin-right: 0px;
-	}
+		img {
+			width: 158px;
+			margin: 15px;
+		}
+		img.easa {
+			width: 134px;
+			padding: 12px;
+		}
+		img.first {
+			margin-left: 0px;
+		}
+		img.last {
+			margin-right: 0px;
+		}
   }
+
   position: relative;
 }
